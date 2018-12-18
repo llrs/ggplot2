@@ -64,6 +64,11 @@ ggplot_global$theme_current <- theme_gray()
 #'
 #' # theme_update() and theme_replace() are similar except they
 #' # apply directly to the current/active theme.
+#' theme_set(theme_classic())
+#' p
+#' theme_update(panel.grid.major.y = element_line(colour = "gray")) 
+#' p
+#' 
 theme_get <- function() {
   ggplot_global$theme_current
 }
